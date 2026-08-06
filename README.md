@@ -1,4 +1,4 @@
-# ✍️ Agente Criador de Conteúdo para Blog (Blog-IA)
+# Agente Criador de Conteúdo para Blog (Blog-IA)
 
 Um sistema inteligente para criação de artigos de blog otimizados para SEO, desenvolvido com **Streamlit**, **LangChain** e o modelo **Llama 3.3 70B** via API do **Groq**.
 
@@ -9,20 +9,20 @@ Um sistema inteligente para criação de artigos de blog otimizados para SEO, de
 
 ---
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
-- **⚡ Geração Direta (Automática):** Informe um assunto e receba um artigo completo gerado em tempo real via streaming.
-- **🛠️ Geração Personalizada (Em Etapas):**
+- **Geração Direta (Automática):** Informe um assunto e receba um artigo completo gerado em tempo real via streaming.
+- **Geração Personalizada (Em Etapas):**
   1. **Ideação:** Geração de sugestões de títulos e subtemas pela IA.
   2. **Revisão:** Edição e personalização livre de títulos e seções pelo usuário.
   3. **Escrita:** Criação do artigo completo adaptado exatamente às suas escolhas.
-- **📊 Métricas do Conteúdo:** Cálculo de total de palavras, caracteres e estimativa de tempo de leitura.
-- **📥 Exportação:** Download fácil do artigo final no formato Markdown (`.md`).
-- **🎨 UI Moderna:** Interface customizada e responsiva desenvolvida em Streamlit.
+- **Métricas do Conteúdo:** Cálculo de total de palavras, caracteres e estimativa de tempo de leitura.
+- **Exportação:** Download fácil do artigo final no formato Markdown (`.md`).
+- **UI Moderna:** Interface customizada e responsiva desenvolvida em Streamlit.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **[Python 3.12+](https://www.python.org/)** — Linguagem base do projeto.
 - **[Streamlit](https://streamlit.io/)** — Framework para a interface web interativa.
@@ -33,14 +33,14 @@ Um sistema inteligente para criação de artigos de blog otimizados para SEO, de
 
 ---
 
-## 📋 Pré-requisitos
+## Pré-requisitos
 
 - Python 3.12 ou superior instalado.
 - Uma chave de API da **Groq** ([obtenha gratuitamente no GroqCloud](https://console.groq.com/)).
 
 ---
 
-## 🔧 Configuração e Instalação
+## Configuração e Instalação
 
 ### 1. Clonar o Repositório
 
@@ -77,7 +77,7 @@ GROQ_API_KEY=sua_chave_groq_aqui
 
 ---
 
-## 💻 Como Executar a Aplicação
+## Como Executar a Aplicação
 
 Para iniciar o servidor web do Streamlit:
 
@@ -89,7 +89,7 @@ A aplicação abrirá automaticamente no seu navegador padrão no endereço `htt
 
 ---
 
-## 📂 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 blog-ia/
@@ -104,6 +104,6 @@ blog-ia/
 
 ---
 
-## 📄 Licença
+## Licença
 
 Este projeto está sob a licença [MIT](LICENSE).
