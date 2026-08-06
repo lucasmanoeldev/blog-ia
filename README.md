@@ -88,6 +88,8 @@ streamlit run frontend.py
 A aplicação abrirá automaticamente no seu navegador padrão no endereço `http://localhost:8501`.
 
 ---
+## Imagem
+<img width="1910" height="944" alt="image" src="https://github.com/user-attachments/assets/dea6f79b-0a0d-48df-a8e3-a1be1915666b" />
 
 ## Estrutura do Projeto
 
