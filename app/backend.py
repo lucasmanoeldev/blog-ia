@@ -5,8 +5,10 @@ from langchain_core.runnables import RunnableParallel
 from pydantic import BaseModel, Field
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_groq import ChatGroq
+from pathlib import Path
 from dotenv import load_dotenv
-load_dotenv()
+
+load_dotenv(Path(__file__).resolve().parents[1] / ".env")
 chat = ChatGroq(
     model="llama-3.3-70b-versatile"
 )

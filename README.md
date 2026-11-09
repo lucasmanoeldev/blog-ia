@@ -69,7 +69,7 @@ pip install -r requirements.txt
 
 ### 3. Configurar as Variáveis de Ambiente
 
-Crie um arquivo `.env` na raiz do projeto baseado no `.env.example`:
+Copie `.env.example` para `.env` na raiz do projeto e preencha sua chave:
 
 ```env
 GROQ_API_KEY=sua_chave_groq_aqui
@@ -82,8 +82,12 @@ GROQ_API_KEY=sua_chave_groq_aqui
 Para iniciar o servidor web do Streamlit:
 
 ```bash
-streamlit run frontend.py
+uv run streamlit run frontend.py
 ```
+
+Se instalou com pip, use `streamlit run frontend.py` com o ambiente virtual ativado.
+
+No Streamlit Community Cloud, mantenha `frontend.py` como arquivo principal e configure `GROQ_API_KEY` nos secrets da aplicação.
 
 A aplicação abrirá automaticamente no seu navegador padrão no endereço `http://localhost:8501`.
 
@@ -93,19 +97,29 @@ A aplicação abrirá automaticamente no seu navegador padrão no endereço `htt
 
 ## Estrutura do Projeto
 
-```
+```text
 blog-ia/
-├── backend.py        # Lógica do LangChain, prompts e integração com o ChatGroq
-├── frontend.py       # Interface de usuário desenvolvida em Streamlit
-├── main.py           # Script de entrada secundário
-├── imagem/           # Assets visuais (favicon, logotipo)
-├── .env.example      # Modelo de variáveis de ambiente
-├── pyproject.toml    # Configuração do projeto e dependências
-└── README.md         # Documentação do projeto
+├── app/
+│   ├── __init__.py
+│   ├── backend.py       # Prompts, cadeias LangChain e integração com a Groq
+│   └── frontend.py      # Interface Streamlit
+├── assets/
+│   ├── favicon.png
+│   └── logotipo.png
+├── frontend.py          # Entrada da aplicação e compatibilidade com deploys
+├── .env.example         # Exemplo de configuração local
+├── .python-version
+├── pyproject.toml       # Dependências compartilhadas
+├── requirements.txt     # Instalação alternativa com pip
+├── uv.lock              # Versões resolvidas pelo uv
+└── README.md
 ```
+
+O frontend chama as funções do backend no mesmo processo Python. Não é necessário iniciar um servidor de API separado. Execute os comandos a partir da raiz do repositório.
+
 
 ---
 
 ## Licença
 
-Este projeto está sob a licença [MIT](LICENSE).
+O repositório ainda não contém um arquivo de licença.
