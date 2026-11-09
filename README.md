@@ -123,3 +123,8 @@ O frontend chama as funções do backend no mesmo processo Python. Não é neces
 ## Licença
 
 O repositório ainda não contém um arquivo de licença.
+
+
+## Outros projetos
+
+Veja o [catálogo de projetos públicos](docs/PROJETOS.md), organizado por área.
